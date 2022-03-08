@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-9 col-md-offset-2">
+            <table class="table table-bordered table-hober text-center">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">n°</th>
+                        <th scope="col">Firts Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Phone Number</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <br>
+                <tbody>
+                    <% if (data) { %>
+                        <% for(var i = 0; i < data.length; i++) { %>
+                        <tr class="table-dark">
+                            <td><%= (i + 1) %></td>
+                            <td><%= data[i].firstname %></td>
+                            <td><%= data[i].lastname %></td>
+                            <td><%= data[i].phonenumber %></td>
+                            <td>
+                                <a href="/API/crud/view" class="btn  btn-outline-success btn-sm">View</a>
+                                <a href="/API/crud/update/<%= data[i].id %>" class="btn  btn-outline-info btn-sm">Edit</a>
+                                <a href="/API/crud/delete/<%= data[i].id %>" class="btn btn-outline-danger btn-sm">Delete</a>
+                                <br>
+                            </td>
+                        </tr>
+                        <% } %>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-3 col-md-offset-2 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/users" method="post">
+                        <div class="form-group">
+                            <label for="firstname">Firts Name:</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="Firt Name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phonenumber">Phone Number:</label>
+                            <input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="Address" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" placeholder="City" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country:</label>
+                            <input type="text" id="country" name="country" placeholder="Country" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" placeholder="Email" required class="form-control">
+                        </div>
+                            <button type="submit" class="btn btn-outline-primary">Save User</button>
+                    </form>
+                </div>
+                <a href="/API/crud" type="submit" class="btn btn-outline-primary" >Crud</a>
+            </div>
+        </div>
+    </div>
+</div>

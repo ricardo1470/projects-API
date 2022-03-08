@@ -9,12 +9,35 @@
     <%- include('partials/nav.html') %>
 
     <div class="container">
-        <div class="card border-info mb-3" style="max-width: 20rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-                <h4 class="card-title">Info card title</h4>
-                <p class="card-text">esta tendra un CRUD con base de datos en PostgreSQL.</p>
-                <a href="/" type="submit" class="btn btn-outline-success btn-sm btn-block" >Home</a>
+        <div class="row mt-4">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="card border-info text-white bg-dark mb-3 mt-3" style="max-width: 20rem;">
+                    <div class="card-header">Create User</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Space to create user</h4>
+                        <a href="/API/crud/users" type="submit" class="btn btn-outline-primary btn-block" >Save User</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-md-offset-4">
+                <div class="card border-info text-white bg-dark mb-3 mt-3" style="max-width: 20rem;">
+                    <div class="card-header">Create Data</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Create Data Test</h4>
+                        <a href="/API/crud/create" type="submit" class="btn btn-outline-primary btn-block" >Save Data</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-md-offset-4">
+                <div class="card border-info text-white bg-dark mb-3 mt-3" style="max-width: 20rem;">
+                    <div class="card-header">Update DataBase</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Add Data Test in to DataBase</h4>
+                        <a href="/API/crud/data" type="submit" class="btn btn-outline-primary btn-block" >Save Data</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

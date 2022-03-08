@@ -33,22 +33,22 @@ app.use('/', routesProject);
 app.use('/API', routesAPI);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-    next(createError(404));
-    res.render('error.html');
-});
+//app.use(function(req, res, next) {
+//    next(createError(404));
+//    res.render('error.html');
+//});
 
 
 // error handler
-app.use(function(err, req, res) {
+//app.use(function(err, req, res) {
     // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
+//    res.locals.message = err.message;
+ //   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-    // render the error page
-    res.status(err.status || 500);
-    res.render('servererror.html');
-});
+//    // render the error page
+//    res.status(err.status || 500);
+//    res.render('servererror.html');
+//});
 
 // start server
 app.listen(port, () => {

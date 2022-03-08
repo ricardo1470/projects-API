@@ -1,7 +1,7 @@
 const getPomodoro = (req, res, next) => {
-    res.render('pomodoro.html', { title: '@Ricardo1470' });
+    res.render('pomodoro.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("pomodoro");
     next();
 }
 

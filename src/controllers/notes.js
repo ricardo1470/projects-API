@@ -1,7 +1,7 @@
 const getNotes = (req, res, next) => {
-    res.render('notes.html', { title: '@Ricardo1470' });
+    res.render('notes.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("notes");
     next();
 }
 

@@ -1,7 +1,7 @@
 const getCrud = (req, res, next) => {
-    res.render('crudpostgres.html', { title: '@Ricardo1470' });
+    res.render('crudpostgres.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("crudpostgres");
     next();
 }
 

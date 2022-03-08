@@ -1,7 +1,7 @@
 const getCounter = (req, res, next) => {
-    res.render('counter.html', { title: '@Ricardo1470' });
+    res.render('counter.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("counter");
     next();
 }
 

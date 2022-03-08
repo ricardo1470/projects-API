@@ -1,7 +1,7 @@
 const getWeather = (req, res, next) => {
-    res.render('weather.html', { title: '@Ricardo1470' });
+    res.render('weather.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("weather");
     next();
 }
 

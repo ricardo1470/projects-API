@@ -1,7 +1,7 @@
 const getTictactoe = (req, res, next) => {
-    res.render('tictactoe.html', { title: '@Ricardo1470' });
+    res.render('tictactoe.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("tictactoe");
     next();
 }
 

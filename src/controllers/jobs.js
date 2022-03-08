@@ -1,7 +1,7 @@
 const getJobs = (req, res, next) => {
-    res.render('jobs.html', { title: '@Ricardo1470' });
+    res.render('jobs.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("jobs");
     next();
 }
 

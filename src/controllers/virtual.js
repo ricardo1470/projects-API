@@ -1,7 +1,7 @@
 const getVirtual = (req, res, next) => {
-    res.render('virtual.html', { title: '@Ricardo1470' });
+    res.render('virtual.html');
     //res.send('Hello World! desde el backend');
-    console.log("buy");
+    console.log("virtual");
     next();
 }
 
