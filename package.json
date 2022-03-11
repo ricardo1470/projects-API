@@ -19,13 +19,15 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "faker": "^5.5.3",
     "http-errors": "^2.0.0",
+    "mongoose": "^6.2.5",
     "morgan": "^1.10.0",
     "pg": "^8.7.3",
-    "pgtools": "^0.3.2",
+    "pgtools": "^0.1.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
