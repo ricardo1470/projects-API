@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const createError = require('http-errors');
 const path = require('path');
 const favicon = require('serve-favicon');
+const pgtools = require('pgtools');
 
 // port
 const port = process.env.PORT || 9000;
@@ -11,6 +12,8 @@ const port = process.env.PORT || 9000;
 // routes
 const routesProject = require('./routes/index');
 const routesAPI = require('./routes/api');
+
+const { connectionDB } = require('./Database/database');
 
 // Initialize the app
 const app = express();
@@ -27,6 +30,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, './public')));
 app.use(favicon(path.join(__dirname, './public/img', 'favicon.ico')));
+
+// database connection
+
 
 //routers
 app.use('/', routesProject);
